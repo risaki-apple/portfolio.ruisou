@@ -288,9 +288,12 @@
       cursor: pointer;
       font-family: "Hina Mincho", serif;
       transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
-      // &:hover {
-      //   background-color: #c5cbd1;
-      // }
+      &:hover {
+        background-color: #c5cbd1;
+      }
+      &:hover .bar-i {
+        background-color: #fff;
+      }
 
       .bar {
         display: block;
@@ -298,11 +301,8 @@
         height: 0.625rem;
         margin: 0 auto;
         position: relative;
-        // &:hover {
-        //   background-color: #fff;
-        // }
 
-        i {
+        &-i {
           display: block;
           width: 1.875rem;
           height: 1px;

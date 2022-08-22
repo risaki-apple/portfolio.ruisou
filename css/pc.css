@@ -336,6 +336,14 @@
   transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
+.l-header__btn button:hover {
+  background-color: #c5cbd1;
+}
+
+.l-header__btn button:hover .bar-i {
+  background-color: #fff;
+}
+
 .l-header__btn button .bar {
   display: block;
   width: 2.25rem;
@@ -344,7 +352,7 @@
   position: relative;
 }
 
-.l-header__btn button .bar i {
+.l-header__btn button .bar-i {
   display: block;
   width: 1.875rem;
   height: 1px;
