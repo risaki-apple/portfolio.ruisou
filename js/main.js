@@ -17,5 +17,39 @@ $(function () {
     });
 });
 
+//下からスライドイン
+// $(window).on('scroll', function(){
+//   var trans = $('.trans');
+//   var show = 'show';
 
-                  
+//   trans.each(function(){
+//     var transOffset = $(this).offset().top;
+//     var scrollPos = $(window).scrollTop();
+//     var wh = $(window).height();
+
+//     if(scrollPos > transOffset - wh + (wh / 2)) {
+//       $(this).addClass(show);
+//     }
+//   });
+// });
+   
+$(function () {
+  // aimation呼び出し
+  if ($('.trans').length) {
+      scrollAnimation();
+  }
+function scrollAnimation() {
+  $(window).scroll(function () {
+      $(".trans").each(function () {
+          let position = $(this).offset().top,
+              scroll = $(window).scrollTop(),
+              windowHeight = $(window).height();
+
+          if (scroll > position - windowHeight + 200) {
+              $(this).addClass('show');
+          }
+      });
+  });
+}
+$(window).trigger('scroll');
+});

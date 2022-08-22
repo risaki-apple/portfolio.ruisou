@@ -261,7 +261,7 @@
   }
   .l-footer__wrap .l-footer__inner .l-footer__flex nav {
     margin-top: 7rem;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
     margin-bottom: 33.6vw;
   }
   .l-footer__wrap .l-footer__inner .l-footer__flex nav ul {
@@ -271,7 +271,7 @@
   .l-footer__wrap .l-footer__inner .l-footer__sns {
     position: absolute;
     bottom: 6.4vw;
-    left: 2rem;
+    left: 0.5rem;
     line-height: 6.4vw;
   }
   .l-footer__wrap .l-footer__inner .l-footer__sns a {
@@ -290,7 +290,26 @@
     line-height: 6.4vw;
   }
   .l-footer__wrap .l-footer__inner .l_footer__copyright {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .p-mainvisual__image.-img_6_1 {
+    display: none;
+  }
+  .p-mainvisual__nami.-nami_5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* 425px以下に適用 */
+  .l-footer__wrap .l-footer__inner .l-footer__flex nav {
+    padding-bottom: 7rem;
+  }
+  .l-footer__wrap .l-footer__inner .l-footer__flex nav ul {
+    display: block;
   }
 }
 /*# sourceMappingURL=sp.css.map */

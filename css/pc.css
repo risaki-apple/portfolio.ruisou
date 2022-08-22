@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .c-logo__title {
   width: 250px;
-  height: 150px;
+  height: 200px;
 }
 
 .c-logo__title a img {
@@ -10,11 +10,13 @@
 }
 
 .c-logo__text {
+  color: #808080;
+  text-shadow: -1px -2px 3px #808080;
   font-size: 0.5625rem;
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: "Hina Mincho", serif;
-  margin-left: 1.7rem;
+  margin-left: 1rem;
 }
 
 .c-link__sns a svg {
@@ -96,6 +98,91 @@
   font-family: "Hina Mincho", serif;
 }
 
+.trans {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+  opacity: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.trans.show {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  opacity: 1;
+}
+
+.to-up {
+  -webkit-transform: translate3d(0px, 15px, 0px);
+          transform: translate3d(0px, 15px, 0px);
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+}
+
+.rotate5 {
+  -webkit-transform: translate3d(10px, -20px, 0px) rotate(5deg);
+          transform: translate3d(10px, -20px, 0px) rotate(5deg);
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+}
+
+.rotate2 {
+  -webkit-transform: translate3d(10px, -20px, 0px) rotate(2deg);
+          transform: translate3d(10px, -20px, 0px) rotate(2deg);
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+.rotate-2 {
+  -webkit-transform: translate3d(10px, -20px, 0px) rotate(-2deg);
+          transform: translate3d(10px, -20px, 0px) rotate(-2deg);
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+.lowerLeft {
+  -webkit-transform: translate3d(-50px, 20px, 0px);
+          transform: translate3d(-50px, 20px, 0px);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.delay500 {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.delay750 {
+  -webkit-transition-delay: 750ms;
+          transition-delay: 750ms;
+}
+
+.delay1000 {
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+}
+
+.delay1250 {
+  -webkit-transition-delay: 1250ms;
+          transition-delay: 1250ms;
+}
+
+.delay1500 {
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
+}
+
+.delay1750 {
+  -webkit-transition-delay: 1750ms;
+          transition-delay: 1750ms;
+}
+
 .l-header__btn.close button {
   background-color: #c5cbd1;
 }
@@ -157,11 +244,11 @@
 }
 
 .l-nav__inner .l-nav__logo {
-  width: 9.125rem;
+  width: 30%;
 }
 
 .l-nav__inner .l-nav__list {
-  padding-left: 5rem;
+  padding-left: 8rem;
   margin-top: 1.5rem;
 }
 
@@ -335,6 +422,8 @@
 }
 
 .l-main .p-mainvisual__inner .p-mainvisual__title h1 {
+  color: #808080;
+  text-shadow: -1px -2px 3px #808080;
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
           writing-mode: vertical-rl;
@@ -351,6 +440,8 @@
 }
 
 .l-main .p-mainvisual__inner .p-mainvisual__text {
+  color: #808080;
+  text-shadow: -1px -2px 3px #808080;
   position: absolute;
   left: 17.734375vw;
   top: 72.265625vw;
@@ -380,21 +471,21 @@
 
 .l-main .p-mainvisual__inner .p-mainvisual__nami.-nami_2 {
   width: 33.4375vw;
-  top: 69vw;
+  top: 75.546875vw;
   left: 16.875vw;
 }
 
 .l-main .p-mainvisual__inner .p-mainvisual__nami.-nami_3 {
   overflow: hidden;
   width: 29.765625vw;
-  top: 30vw;
+  top: 36.09375vw;
   right: -2.65625vw;
 }
 
 .l-main .p-mainvisual__inner .p-mainvisual__nami.-nami_4 {
   width: 28.515625vw;
-  top: 95vw;
-  left: 4.671875vw;
+  top: 99.765625vw;
+  left: 3.671875vw;
 }
 
 .l-main .p-mainvisual__inner .p-mainvisual__image {
@@ -733,13 +824,12 @@
 }
 
 .l-main .p-howTo__inner .p-howTo__nami {
-  margin-top: 1.25rem;
   text-align: center;
 }
 
 .l-main .p-howTo__inner .p-howTo__nami img {
-  width: 500px;
-  height: 33px;
+  width: 40%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }

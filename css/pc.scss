@@ -1,6 +1,6 @@
 .c-logo__title {
   width: 250px;
-  height: 150px;
+  height: 200px;
   a {
     img {
       width: 100%;
@@ -9,11 +9,13 @@
   }
 }
 .c-logo__text {
+  color: #808080;
+  text-shadow: -1px -2px 3px #808080;
   font-size: 0.5625rem;
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: "Hina Mincho", serif;
-  margin-left: 1.7rem;
+  margin-left: 1rem;
 }
 
 .c-link__sns {
@@ -98,6 +100,58 @@
   font-family: "Hina Mincho", serif;
 }
 
+//アニメーション
+.trans {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2000ms;
+  transition-timing-function: ease;
+}
+.trans.show {
+  transform: translate(0, 0);
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.to-up {
+  transform: translate3d(0px, 15px, 0px);
+  transition-duration: 1500ms;
+}
+.rotate5 {
+  transform: translate3d(10px, -20px, 0px) rotate(5deg);
+  transition-duration: 1500ms;
+}
+.rotate2 {
+  transform: translate3d(10px, -20px, 0px) rotate(2deg);
+  transition-duration: 2000ms;
+}
+.rotate-2 {
+  transform: translate3d(10px, -20px, 0px) rotate(-2deg);
+  transition-duration: 2000ms;
+}
+.lowerLeft {
+  transform: translate3d(-50px, 20px, 0px);
+  transition-duration: 1000ms;
+}
+.delay500 {
+  transition-delay: 500ms;
+}
+.delay750 {
+  transition-delay: 750ms;
+}
+.delay1000 {
+  transition-delay: 1000ms;
+}
+.delay1250 {
+  transition-delay: 1250ms;
+}
+.delay1500 {
+  transition-delay: 1500ms;
+}
+.delay1750 {
+  transition-delay: 1750ms;
+}
+
 // バーガーメニュー
 .l-header__btn.close {
   button {
@@ -150,10 +204,10 @@
   display: flex;
   justify-content: flex-end;
   .l-nav__logo {
-    width: 9.125rem;
+    width: 30%;
   }
   .l-nav__list {
-    padding-left: 5rem;
+    padding-left: 8rem;
     margin-top: 1.5rem;
     &__main {
       font-size: 1.25rem;
@@ -312,6 +366,8 @@
         z-index: 21;
 
         h1 {
+          color: #808080;
+          text-shadow: -1px -2px 3px #808080;
           -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
           letter-spacing: 0.4em;
@@ -328,6 +384,8 @@
       }
 
       .p-mainvisual__text {
+        color: #808080;
+        text-shadow: -1px -2px 3px #808080;
         position: absolute;
         left: 17.734375vw;
         top: 72.265625vw;
@@ -353,19 +411,19 @@
         }
         &.-nami_2 {
           width: 33.4375vw;
-          top: 69vw;
+          top: 75.546875vw;
           left: 16.875vw;
         }
         &.-nami_3 {
           overflow: hidden;
           width: 29.765625vw;
-          top: 30vw;
+          top: 36.09375vw;
           right: -2.65625vw;
         }
         &.-nami_4 {
           width: 28.515625vw;
-          top: 95vw;
-          left: 4.671875vw;
+          top: 99.765625vw;
+          left: 3.671875vw;
         }
       }
 
@@ -657,12 +715,11 @@
         letter-spacing: 0.2em;
       }
       .p-howTo__nami {
-        margin-top: 1.25rem;
         text-align: center;
 
         img {
-          width: 500px;
-          height: 33px;
+          width: 40%;
+          height: auto;
           object-fit: cover;
         }
       }
