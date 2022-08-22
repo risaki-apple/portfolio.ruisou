@@ -289,17 +289,20 @@
     width: 40vw;
   }
   .l-footer__wrap .l-footer__inner .l-footer__flex nav {
-    margin-top: 7rem;
+    margin-top: 10rem;
     margin-left: 0.5rem;
-    margin-bottom: 33.6vw;
+    margin-bottom: 55vw;
   }
   .l-footer__wrap .l-footer__inner .l-footer__flex nav ul {
     width: auto;
     margin-right: -1.25rem;
   }
+  .l-footer__wrap .l-footer__inner .l-footer__flex nav ul li a {
+    font-size: 0.75rem;
+  }
   .l-footer__wrap .l-footer__inner .l-footer__sns {
     position: absolute;
-    bottom: 6.4vw;
+    bottom: 8vw;
     left: 0.5rem;
     line-height: 6.4vw;
   }

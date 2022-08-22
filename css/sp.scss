@@ -320,18 +320,23 @@
             width: 40vw;
           }
           nav {
-            margin-top: 7rem;
+            margin-top: 10rem;
             margin-left: 0.5rem;
-            margin-bottom: 33.6vw;
+            margin-bottom: 55vw;
             ul {
               width: auto;
               margin-right: -1.25rem;
+              li {
+                a {
+                  font-size: 0.75rem;
+                }
+              }
             }
           }
         }
         .l-footer__sns {
           position: absolute;
-          bottom: 6.4vw;
+          bottom: 8vw;
           left: 0.5rem;
           line-height: 6.4vw;
           a {
