@@ -323,8 +323,24 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  /* 520px以下に適用 */
+  .l-main .p-mainvisual__inner .p-mainvisual__image.-size_1 {
+    width: 59vw;
+  }
+  .l-main .p-mainvisual__inner .p-mainvisual__image.-img_1_1 {
+    top: 57vw;
+  }
+}
+
 @media screen and (max-width: 425px) {
   /* 425px以下に適用 */
+  .l-main .p-mainvisual__inner .p-mainvisual__image.-size_1 {
+    width: 50vw;
+  }
+  .l-main .p-mainvisual__inner .p-mainvisual__image.-img_1_1 {
+    top: 74vw;
+  }
   .l-footer__wrap .l-footer__inner .l-footer__flex nav {
     padding-bottom: 7rem;
   }

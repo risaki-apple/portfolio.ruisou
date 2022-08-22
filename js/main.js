@@ -1,4 +1,4 @@
-//ヘッダー隠れ防ぐ
+//topへ移動
 $('a[href^="#"]').click(function() {
     var speed = 800;
     var adjust = 79;

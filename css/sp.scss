@@ -356,8 +356,41 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  /* 520px以下に適用 */
+  .l-main {
+    .p-mainvisual {
+      &__inner {
+        .p-mainvisual__image {
+          &.-size_1 {
+            width: 59vw;
+          }
+          &.-img_1_1 {
+            top: 57vw;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 425px) {
   /* 425px以下に適用 */
+  .l-main {
+    .p-mainvisual {
+      &__inner {
+        .p-mainvisual__image {
+          &.-size_1 {
+            width: 50vw;
+          }
+          &.-img_1_1 {
+            top: 74vw;
+          }
+        }
+      }
+    }
+  }
+
   .l-footer {
     &__wrap {
       .l-footer__inner {
