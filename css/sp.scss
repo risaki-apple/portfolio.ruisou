@@ -3,6 +3,11 @@
   .l-main {
     .p-mainvisual {
       &__inner {
+        .p-mainvisual__nami {
+          &.-nami_1 {
+            top: 35vw;
+          }
+        }
         .p-mainvisual__image {
           &.-img_2_1 {
             top: 37vw;
@@ -30,6 +35,10 @@
   .p-mainvisual__nami.-nami_5 {
     display: none;
   }
+
+  .p-sns__top {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -37,9 +46,6 @@
 
   // ***** main *****
   .l-main {
-    .p-sns__top {
-      display: none;
-    }
     .p-mainvisual {
       height: 413.3333333333vw !important;
       &__inner {

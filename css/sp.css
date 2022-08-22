@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @media screen and (max-width: 1100px) {
   /* 1100px以下に適用 */
+  .l-main .p-mainvisual__inner .p-mainvisual__nami.-nami_1 {
+    top: 35vw;
+  }
   .l-main .p-mainvisual__inner .p-mainvisual__image.-img_2_1 {
     top: 37vw;
   }
@@ -23,13 +26,13 @@
   .p-mainvisual__nami.-nami_5 {
     display: none;
   }
+  .p-sns__top {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
   /* 800px以下に適用 */
-  .l-main .p-sns__top {
-    display: none;
-  }
   .l-main .p-mainvisual {
     height: 413.3333333333vw !important;
   }
