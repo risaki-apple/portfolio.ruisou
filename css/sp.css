@@ -33,6 +33,11 @@
 
 @media screen and (max-width: 800px) {
   /* 800px以下に適用 */
+  .l-header__logo {
+    width: 8.75rem;
+    top: 1.5625rem;
+    left: 1.5625rem;
+  }
   .l-main .p-mainvisual {
     height: 413.3333333333vw !important;
   }
