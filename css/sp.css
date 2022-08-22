@@ -326,6 +326,36 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  /* 640px以下に適用 */
+  .l-nav__inner {
+    display: block;
+    padding: 29.8666666667vw 10.6666666667vw 29.8666666667vw 37.3333333333vw;
+  }
+  .l-nav__inner .l-nav__logo {
+    width: 33.6vw;
+  }
+  .l-nav__inner .l-nav__list {
+    padding-left: 0;
+  }
+  .l-nav__inner .l-nav__list__main {
+    margin-top: 3.125rem;
+    padding-top: 1.25rem;
+    position: relative;
+    font-size: 1.15rem;
+  }
+  .l-nav__inner .l-nav__list__main::before {
+    content: "";
+    display: block;
+    width: 2.375rem;
+    height: 1px;
+    background-color: #c5cbd1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 520px) {
   /* 520px以下に適用 */
   .l-main .p-mainvisual__inner .p-mainvisual__image.-size_1 {

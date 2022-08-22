@@ -242,7 +242,8 @@
 }
 
 .l-nav__inner .l-nav__logo {
-  width: 30%;
+  margin-top: 2rem;
+  width: 9.125rem;
 }
 
 .l-nav__inner .l-nav__list {
