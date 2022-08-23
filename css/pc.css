@@ -288,6 +288,12 @@
   visibility: hidden;
 }
 
+.l-nav__inner {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .l-nav.open {
   opacity: 1 !important;
   visibility: visible !important;

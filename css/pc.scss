@@ -226,6 +226,11 @@
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
+  &__inner {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 .l-nav.open {
   opacity: 1 !important;
