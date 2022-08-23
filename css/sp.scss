@@ -52,6 +52,17 @@
     }
   }
 
+  .l-nav {
+    &__inner {
+      .l-nav__list {
+        padding-left: 1rem;
+        &__main {
+          font-size: 1.15rem;
+        }
+      }
+    }
+  }
+
   .l-main {
     .p-mainvisual {
       height: 413.3333333333vw !important;
@@ -383,7 +394,6 @@
           margin-top: 3.125rem;
           padding-top: 1.25rem;
           position: relative;
-          font-size: 1.15rem;
 
           &::before {
             content: "";
