@@ -231,9 +231,16 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
-.noscroll {
+body.noscroll {
   overflow: hidden;
+  height: 100%;
 }
+//ios対応
+html {
+  overflow: auto;
+  height: 100%;
+}
+
 .l-nav__inner {
   padding: 9.375rem;
   display: flex;

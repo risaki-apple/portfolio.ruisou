@@ -293,8 +293,14 @@
   visibility: visible !important;
 }
 
-.noscroll {
+body.noscroll {
   overflow: hidden;
+  height: 100%;
+}
+
+html {
+  overflow: auto;
+  height: 100%;
 }
 
 .l-nav__inner {
