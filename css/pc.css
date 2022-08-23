@@ -290,7 +290,7 @@
 
 .l-nav__inner {
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
