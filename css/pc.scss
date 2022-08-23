@@ -129,9 +129,33 @@
   transform: translate3d(10px, -20px, 0px) rotate(-2deg);
   transition-duration: 2000ms;
 }
-.lowerLeft {
+.skewX5 {
+  transform: skewX(5deg);
+  transition-duration: 2000ms;
+}
+.skewX20 {
+  transform: skewX(20deg);
+  transition-duration: 2000ms;
+}
+.nami_lowerLeft {
   transform: translate3d(-50px, 20px, 0px);
   transition-duration: 1000ms;
+}
+.upperRight {
+  transform: translate3d(20px, -20px, 0px);
+  transition-duration: 2000ms;
+}
+.lowerRight {
+  transform: translate3d(20px, 20px, 0px);
+  transition-duration: 2000ms;
+}
+.lowerLeft {
+  transform: translate3d(-20px, 20px, 0px);
+  transition-duration: 2000ms;
+}
+.upperLeft {
+  transform: translate3d(-20px, -20px, 0px);
+  transition-duration: 2000ms;
 }
 .delay500 {
   transition-delay: 500ms;
@@ -150,6 +174,17 @@
 }
 .delay1750 {
   transition-delay: 1750ms;
+}
+
+/*** アニメーションの定義 ***/
+@keyframes textWave {
+  0% {
+    right: 0;
+  }
+  100% {
+    //right: -0.5em; /* right位置を4分の1ずらす */
+    transform: skewX(20deg);
+  }
 }
 
 // バーガーメニュー
@@ -379,11 +414,44 @@
           line-height: 1;
           font-size: 17px;
           font-weight: 400;
+          p {
+            margin-left: 1.875vw;
+            &:last-child {
+              margin-left: 0;
+            }
 
-          br {
-            display: block;
-            content: "";
-            margin: 0 24px;
+            span {
+              // display: inline-block; /* インラインブロック要素とする（アニメーションのため） */
+              // position: relative; /* 相対位置とする（アニメーションのため） */
+
+              // animation-name: textWave;
+              // animation-duration: 1s;
+              //animation-timing-function: ease-out; // 変化のスピード感 ( linear : 開始から終了まで一定)
+              &:nth-child(2) {
+                transition-delay: 0.2s;
+              }
+              &:nth-child(3) {
+                transition-delay: 0.4s;
+              }
+              &:nth-child(4) {
+                transition-delay: 0.6s;
+              }
+              &:nth-child(5) {
+                transition-delay: 0.8s;
+              }
+              &:nth-child(6) {
+                transition-delay: 1s;
+              }
+              &:nth-child(7) {
+                transition-delay: 1.2s;
+              }
+              &:nth-child(8) {
+                transition-delay: 1.4s;
+              }
+              &:nth-child(9) {
+                transition-delay: 1.6s;
+              }
+            }
           }
         }
       }
@@ -478,12 +546,12 @@
           right: -7.03125vw;
         }
         &.-img_4_1 {
-          top: 57.96875vw;
+          top: 59.96875vw;
           left: 56.328125vw;
           z-index: 2;
         }
         &.-img_4_2 {
-          bottom: 0vw;
+          bottom: 5vw;
           left: 77.34375vw;
           z-index: 1;
         }
