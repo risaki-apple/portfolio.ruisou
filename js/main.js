@@ -14,6 +14,7 @@ $(function () {
     $('.l-header__btn').on('click', function () {
         $('.l-header__btn').toggleClass('close');
         $('.l-nav').toggleClass('open');
+        $('body').toggleClass('noscroll'); // 追記
     });
 });
 

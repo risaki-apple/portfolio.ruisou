@@ -231,7 +231,9 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
-
+.noscroll {
+  overflow: hidden;
+}
 .l-nav__inner {
   padding: 9.375rem;
   display: flex;

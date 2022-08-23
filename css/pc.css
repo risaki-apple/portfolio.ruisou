@@ -293,6 +293,10 @@
   visibility: visible !important;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .l-nav__inner {
   padding: 9.375rem;
   display: -webkit-box;
