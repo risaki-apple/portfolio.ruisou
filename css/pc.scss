@@ -1,6 +1,10 @@
+//Safari用
+// _::-webkit-full-page-media,
+// _:future,
+// :root .p-mainvisual__title {
+//   right: ;
+// }
 .c-logo__title {
-  // width: 250px;
-  // height: 200px;
   width: 8.75rem;
   a {
     img {
@@ -402,12 +406,12 @@
       overflow: hidden;
       display: block;
       .p-mainvisual__title {
-        position: absolute;
-        right: 18.75vw;
-        top: 23.4375vw;
-        z-index: 21;
-
         h1 {
+          position: absolute;
+          right: 18.75vw;
+          top: 23.4375vw;
+          z-index: 21;
+
           -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
           letter-spacing: 0.4em;
