@@ -31,7 +31,7 @@ function scrollAnimation() {
               scroll = $(window).scrollTop(),
               windowHeight = $(window).height();
 
-          if (scroll > position - windowHeight + 50) {
+          if (scroll > position - windowHeight) {
               $(this).addClass('show');
           }
       });
