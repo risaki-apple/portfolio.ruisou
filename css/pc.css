@@ -223,6 +223,11 @@
           transition-delay: 1750ms;
 }
 
+.delay2000 {
+  -webkit-transition-delay: 2000ms;
+          transition-delay: 2000ms;
+}
+
 /*** アニメーションの定義 ***/
 @-webkit-keyframes textWave {
   0% {
