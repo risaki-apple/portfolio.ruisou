@@ -109,8 +109,8 @@
 }
 
 .trans.show {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   opacity: 1;
@@ -165,28 +165,28 @@
           transition-duration: 1000ms;
 }
 
-.upperRight {
+.p-mainvisual__title__box.trans.upperRight {
   -webkit-transform: translate3d(20px, -20px, 0px);
           transform: translate3d(20px, -20px, 0px);
   -webkit-transition-duration: 2000ms;
           transition-duration: 2000ms;
 }
 
-.lowerRight {
+.p-mainvisual__title__box.trans.lowerRight {
   -webkit-transform: translate3d(20px, 20px, 0px);
           transform: translate3d(20px, 20px, 0px);
   -webkit-transition-duration: 2000ms;
           transition-duration: 2000ms;
 }
 
-.lowerLeft {
+.p-mainvisual__title__box.trans.lowerLeft {
   -webkit-transform: translate3d(-20px, 20px, 0px);
           transform: translate3d(-20px, 20px, 0px);
   -webkit-transition-duration: 2000ms;
           transition-duration: 2000ms;
 }
 
-.upperLeft {
+.p-mainvisual__title__box.trans.upperLeft {
   -webkit-transform: translate3d(-20px, -20px, 0px);
           transform: translate3d(-20px, -20px, 0px);
   -webkit-transition-duration: 2000ms;

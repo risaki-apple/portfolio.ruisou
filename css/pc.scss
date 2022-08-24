@@ -107,7 +107,7 @@
   transition-timing-function: ease;
 }
 .trans.show {
-  transform: translate(0, 0);
+  transform: translate(0, 0) !important;
   transform: rotate(0deg);
   opacity: 1;
 }
@@ -139,19 +139,19 @@
   transform: translate3d(-50px, 20px, 0px);
   transition-duration: 1000ms;
 }
-.upperRight {
+.p-mainvisual__title__box.trans.upperRight {
   transform: translate3d(20px, -20px, 0px);
   transition-duration: 2000ms;
 }
-.lowerRight {
+.p-mainvisual__title__box.trans.lowerRight!important {
   transform: translate3d(20px, 20px, 0px);
   transition-duration: 2000ms;
 }
-.lowerLeft {
+.p-mainvisual__title__box.trans.lowerLeft {
   transform: translate3d(-20px, 20px, 0px);
   transition-duration: 2000ms;
 }
-.upperLeft {
+.p-mainvisual__title__box.trans.upperLeft {
   transform: translate3d(-20px, -20px, 0px);
   transition-duration: 2000ms;
 }
