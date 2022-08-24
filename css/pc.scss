@@ -236,11 +236,32 @@
 .l-nav.open {
   opacity: 1 !important;
   visibility: visible !important;
+  /* 縦方向のスクロールバーを表示 */
+  overflow-y: scroll;
+
+  /* IE などのスクロールバーの色設定 */
+  scrollbar-face-color: #999;
+  scrollbar-track-color: #eee;
+
+  /* スマホ用の慣性スクロール */
+  -webkit-overflow-scrolling: touch;
+
+  /* Chrome などでは細めのきれいなスクロールバーを表示 */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(177, 177, 177, 0.3);
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(177, 177, 177, 0.1);
+  }
 }
 body.noscroll {
   overflow: hidden;
   height: 100%;
 }
+
 //ios対応
 html {
   overflow: auto;
