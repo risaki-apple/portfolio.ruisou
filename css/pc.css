@@ -259,7 +259,7 @@
 .l-header__btn.close .bar-top {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 50%;
+  top: 29px;
   right: 50%;
   margin-right: -0.9375rem;
 }
@@ -271,7 +271,7 @@
 .l-header__btn.close .bar-bottom {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 50%;
+  top: 29px;
   right: 50%;
   margin-right: -0.9375rem;
 }
@@ -427,7 +427,6 @@ html {
   right: 0;
   width: 5rem;
   height: 5rem;
-  text-align: center;
 }
 
 .l-header__btn button {
@@ -451,7 +450,7 @@ html {
 .l-header__btn button .bar {
   display: block;
   width: 2.25rem;
-  height: 0.625rem;
+  height: 5rem;
   margin: 0 auto;
   position: relative;
 }
@@ -461,25 +460,23 @@ html {
   width: 1.875rem;
   height: 1px;
   background-color: #c5cbd1;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
   position: absolute;
   -webkit-transition: background-color 0.3s cubic-bezier(0, 0.55, 0.45, 1);
   transition: background-color 0.3s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
 .l-header__btn button .bar-top {
-  top: calc(50% - 5px);
+  top: 24px;
   right: 0;
 }
 
 .l-header__btn button .bar-middle {
-  top: 50%;
+  top: 29px;
   left: 0;
 }
 
 .l-header__btn button .bar-bottom {
-  top: calc(50% + 5px);
+  top: 34px;
   right: 0;
 }
 
@@ -487,8 +484,9 @@ html {
   content: "menu";
   /*3つ目の要素のafterにMenu表示を指定*/
   position: absolute;
-  top: 1.3rem;
-  left: 0;
+  width: 36px;
+  top: 52px;
+  left: 0px;
   color: black;
   font-size: 0.6rem;
   line-height: 1;
@@ -623,7 +621,7 @@ html {
 .l-main .p-mainvisual__inner .p-mainvisual__nami.-nami_3 {
   overflow: hidden;
   width: 29.765625vw;
-  top: 36.09375vw;
+  top: 41vw;
   right: -2.65625vw;
 }
 
@@ -1002,6 +1000,7 @@ html {
           writing-mode: vertical-rl;
   position: absolute;
   font-size: 1.25rem;
+  font-weight: 400;
   letter-spacing: 0.2em;
   line-height: 1;
   left: calc(-1.5em + 2px);
@@ -1132,7 +1131,7 @@ html {
           align-items: flex-end;
   width: 100%;
   height: 100%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Hina Mincho", serif;
   letter-spacing: 0.12em;
   padding-right: 1.5625vw;

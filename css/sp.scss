@@ -70,7 +70,7 @@
         height: 100%;
         .p-mainvisual__title {
           right: 7.4666666667vw;
-          top: 150.9333333333vw;
+          top: 153vw;
 
           h1 {
             font-size: 3.7333333333vw;
@@ -100,7 +100,7 @@
           }
           &.-nami_3 {
             width: 101.6vw;
-            top: 117.8666666667vw;
+            top: 110vw;
             left: 42.4vw;
           }
           &.-nami_4 {
@@ -339,7 +339,6 @@
           }
           nav {
             margin-top: 10rem;
-            margin-left: 0.5rem;
             margin-bottom: 55vw;
             ul {
               width: auto;
@@ -347,10 +346,15 @@
               li {
                 a {
                   font-size: 0.75rem;
+                  padding-right: 0.5rem;
                 }
               }
             }
           }
+        }
+        .l_footer__pagetop {
+          width: 21.3333333333vw;
+          height: 43.7333333333vw;
         }
         .l-footer__sns {
           position: absolute;
@@ -439,21 +443,6 @@
           }
           &.-img_1_1 {
             top: 74vw;
-          }
-        }
-      }
-    }
-  }
-
-  .l-footer {
-    &__wrap {
-      .l-footer__inner {
-        .l-footer__flex {
-          nav {
-            padding-bottom: 7rem;
-            ul {
-              display: block;
-            }
           }
         }
       }
