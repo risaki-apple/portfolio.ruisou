@@ -686,8 +686,8 @@ html {
   animation-name: imgScale;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .l-main .p-mainvisual__inner .p-mainvisual__image.-size_1 {
