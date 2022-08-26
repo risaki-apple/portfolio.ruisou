@@ -33,6 +33,7 @@
 
 .c-link__sns a span {
   padding-left: 0.625rem;
+  font-size: 0.875rem;
   letter-spacing: 0.12em;
   font-family: "Hina Mincho", serif;
 }
