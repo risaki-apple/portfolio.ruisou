@@ -567,7 +567,7 @@ html {
 
           animation-name: imgScale;
           animation-duration: 1s;
-          animation-timing-function: linear; // 変化のスピード感 ( ease-in : 速度はゆっくり始まり、終了まで加速)
+          animation-timing-function: ease-out;
         }
 
         &.-size_1 {
