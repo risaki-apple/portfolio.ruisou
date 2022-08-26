@@ -149,6 +149,7 @@
 .nami_lowerLeft {
   transform: translate3d(-50px, 20px, 0px);
   transition-duration: 1000ms;
+  transition-timing-function: ease-out;
 }
 .p-mainvisual__title__box.trans.upperRight {
   transform: translate3d(20px, -20px, 0px);
