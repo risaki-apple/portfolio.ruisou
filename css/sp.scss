@@ -206,12 +206,15 @@
           flex-direction: column;
           margin-right: 0;
           .p-news__content {
+            position: relative;
+            padding-left: 0;
+            margin-top: 17.0666666667vw;
             .p-news__viewMore {
               display: none;
             }
             .p-news__subTitle {
               position: absolute;
-              top: -6rem;
+              top: calc(-17.0666666667vw - 96px);
               right: 12.8vw;
             }
 
@@ -221,11 +224,11 @@
 
               li {
                 display: block;
-                margin-top: 10rem;
-                width: 100%;
+                width: auto;
 
                 &:first-child {
                   padding-right: 0;
+                  margin-bottom: 16vw;
                 }
                 a {
                   display: block;
@@ -332,40 +335,42 @@
       padding-left: 9.6vw;
       padding-right: 9.6vw;
       .l-footer__inner {
-        .l-footer__flex {
-          display: block;
-          .l-footer__logo {
-            width: 40vw;
-          }
-          nav {
-            margin-top: 10rem;
-            margin-bottom: 55vw;
-            ul {
-              width: auto;
-              margin-right: -1.25rem;
-              li {
-                a {
-                  font-size: 0.75rem;
-                  padding-right: 0.5rem;
-                }
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        gap: 0;
+        grid-template-areas:
+          "logo pagetop"
+          "nav nav"
+          "ig ig"
+          "copyright copyright";
+        .l-footer__logo {
+          width: 37.3333333333vw;
+        }
+        nav {
+          ul {
+            width: auto;
+            margin-right: -1.25rem;
+            li {
+              a {
+                font-size: 0.75rem;
+                padding-right: 0.5rem;
               }
             }
           }
         }
+
         .l_footer__pagetop {
           width: 21.3333333333vw;
           height: 43.7333333333vw;
         }
         .l-footer__sns {
-          position: absolute;
-          bottom: 8vw;
-          left: 0.5rem;
-          line-height: 6.4vw;
+          padding-top: 33.6vw;
           a {
             display: flex;
             svg {
               width: 6.4vw;
               height: 6.4vw;
+              display: block;
             }
             span {
               display: block;
@@ -376,7 +381,7 @@
           }
         }
         .l_footer__copyright {
-          margin-left: 0.5rem;
+          padding-top: 6.4vw;
         }
       }
     }

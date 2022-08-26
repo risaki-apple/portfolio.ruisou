@@ -46,6 +46,8 @@ th,
 td {
   margin: 0;
   padding: 0;
+  font-weight: 400;
+  font-size: 100%;
 }
 table {
   border-collapse: collapse;
@@ -68,7 +70,7 @@ strong,
 th,
 var {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 ol,
@@ -87,7 +89,7 @@ h4,
 h5,
 h6 {
   font-size: 100%;
-  font-weight: normal;
+  font-weight: 400;
 }
 q:before,
 q:after {
