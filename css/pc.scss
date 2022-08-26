@@ -1,3 +1,12 @@
+.c_list_date {
+  letter-spacing: 0.1em;
+  font-family: "Hina Mincho", serif;
+}
+
+.c_list_title {
+  font-weight: 400;
+}
+
 .c-logo__title {
   width: 8.75rem;
   a {
@@ -24,7 +33,6 @@
     }
     span {
       padding-left: 0.625rem;
-      font-size: 0.875rem;
       letter-spacing: 0.12em;
       font-family: "Hina Mincho", serif;
     }
@@ -59,18 +67,21 @@
     display: inline-block;
     position: relative;
     padding-right: 3.75rem;
+    width: 74.852px;
+    font-size: 13px;
     height: 100%;
     letter-spacing: 0.1em;
     font-family: "Hina Mincho", serif;
     white-space: nowrap;
     color: inherit;
     text-decoration: none;
+    font-size: auto;
 
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: 1.0625rem;
+      top: 13px;
       right: 0.875rem;
       width: 2.375rem;
       height: 1px;
@@ -81,7 +92,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: 0.1875rem;
+      top: 0;
       right: 0;
       width: 1.6875rem;
       height: 1.6875rem;
@@ -185,6 +196,17 @@
   100% {
     //right: -0.5em; /* right位置を4分の1ずらす */
     transform: skewX(20deg);
+  }
+}
+
+@keyframes imgScale {
+  0% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -460,7 +482,7 @@ html {
 
             // animation-name: textWave;
             // animation-duration: 1s;
-            //animation-timing-function: ease-out; // 変化のスピード感 ( linear : 開始から終了まで一定)
+            // animation-timing-function: ease-out; // 変化のスピード感 ( linear : 開始から終了まで一定)
             &:nth-child(2) {
               transition-delay: 0.2s;
             }
@@ -539,6 +561,13 @@ html {
 
         img {
           width: 100%;
+          animation-name: imgScale;
+          display: inline-block; /* インラインブロック要素とする（アニメーションのため） */
+          position: relative; /* 相対位置とする（アニメーションのため） */
+
+          animation-name: imgScale;
+          animation-duration: 1s;
+          animation-timing-function: linear; // 変化のスピード感 ( ease-in : 速度はゆっくり始まり、終了まで加速)
         }
 
         &.-size_1 {
@@ -558,39 +587,71 @@ html {
           top: 8.75vw;
           left: calc(50% - 17.96875vw);
           z-index: 2;
+          img {
+            animation-delay: 750ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_1_2 {
           top: -3.75vw;
           left: calc(50% + 10.15625vw);
           z-index: 1;
+          img {
+            animation-delay: 1000ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_2_1 {
           top: 30vw;
           left: -3.515625vw;
           z-index: 1;
+          img {
+            animation-delay: 1000ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_2_2 {
           top: 47.265625vw;
           left: 11.71875vw;
           z-index: 2;
+          img {
+            animation-delay: 750ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_3_1 {
           top: 16.09375vw;
           right: -7.03125vw;
+          img {
+            animation-delay: 1000ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_4_1 {
           top: 59.96875vw;
           left: 56.328125vw;
           z-index: 2;
+          img {
+            animation-delay: 500ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_4_2 {
           bottom: 5vw;
           left: 77.34375vw;
           z-index: 1;
+          img {
+            animation-delay: 1000ms;
+            animation-name: imgScale;
+          }
         }
         &.-img_5_1 {
           top: 87.03125vw;
           left: 14.0625vw;
+          img {
+            animation-delay: 1000ms;
+            animation-name: imgScale;
+          }
         }
       }
     }
@@ -699,24 +760,25 @@ html {
         ul {
           display: flex;
           margin-top: 4.5rem;
+          gap: 5.7815845824%;
           li {
-            width: 48%;
+            width: 47.1092077088%;
 
-            &:first-child {
-              padding-right: 35px;
-            }
             a {
               display: flex;
               justify-content: space-between;
+              gap: 1.3125rem;
 
               .p-news__list__img {
-                margin-right: 1rem;
+                width: 45.4545%;
                 img {
-                  width: 200px;
+                  width: 100%;
                 }
               }
               .p-news__list__textArea {
+                flex: 1; //これがないとimgのwidth効かない
                 font-size: 0.875rem;
+                font-weight: 400;
               }
             }
           }
@@ -900,54 +962,57 @@ html {
     position: relative;
 
     .l-footer__inner {
-      position: relative;
-      .l-footer__flex {
-        display: flex;
-        margin-bottom: 4.53125vw;
-        .l-footer__logo {
-          width: 20vw;
-          a {
-            display: block;
-            img {
-              max-width: 100%;
-              height: auto;
-            }
+      display: grid;
+      grid-template-columns: 12.96875vw 1fr 7.03125vw;
+      grid-template-rows: 1fr 20px;
+      grid-template-areas:
+        "logo nav pagetop"
+        "copyright copyright ig";
+      gap: 5.46875vw 8.3333333333%;
+
+      .l-footer__logo {
+        width: 12.96875vw;
+        grid-area: logo;
+        a {
+          display: block;
+          img {
+            max-width: 100%;
+            height: auto;
           }
         }
+      }
+      nav {
+        grid-area: nav;
+        ul {
+          width: max-content;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin-right: -2.5rem;
+          height: 7.3125rem;
 
-        nav {
-          ul {
-            width: max-content;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-right: -2.5rem;
-            height: 7.3125rem;
-
-            li {
-              display: list-item;
-              text-align: -webkit-match-parent;
-              a {
-                display: inline-block;
-                color: inherit;
-                padding-right: 2.5rem;
-                text-decoration: none;
-                font-size: 0.875rem;
-                letter-spacing: 0.06em;
-                line-height: 2.5;
-              }
+          li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+            font-weight: 400;
+            a {
+              display: inline-block;
+              color: inherit;
+              padding-right: 2.5rem;
+              text-decoration: none;
+              font-size: 0.875rem;
+              letter-spacing: 0.06em;
+              line-height: 2.5;
             }
           }
         }
       }
 
       .l_footer__pagetop {
-        position: absolute;
+        position: relative;
         height: 12.8125vw;
         transform: translateY(-100%);
         margin-left: auto;
-        top: 0;
-        right: 0;
 
         a {
           display: flex;
@@ -977,17 +1042,20 @@ html {
       }
 
       .l-footer__sns {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        grid-area: ig;
+        a {
+          width: 100% !important;
+          svg {
+            display: none;
+          }
+        }
       }
 
       .l_footer__copyright {
+        grid-area: copyright;
         font-size: 0.625rem;
         letter-spacing: 0.06em;
         line-height: 1;
-        width: 100%;
-        margin-left: 0.5rem;
       }
     }
   }
