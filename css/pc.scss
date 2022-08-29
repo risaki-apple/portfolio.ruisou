@@ -72,6 +72,9 @@
     color: inherit;
     text-decoration: none;
     font-size: auto;
+    &:hover {
+      color: gray;
+    }
 
     &::before {
       content: "";
@@ -949,6 +952,9 @@ html {
             font-size: 0.875rem;
             line-height: 2.285714286;
             letter-spacing: 0.05em;
+            br {
+              display: none;
+            }
           }
 
           .p-howTo__img {
