@@ -18,9 +18,8 @@ $(function () {
     });
 });
 
-//アニメーション   
+//アニメーション(全体)
 $(function () {
-  // aimation呼び出し
   if ($('.trans').length) {
       scrollAnimation();
   }
@@ -35,25 +34,69 @@ function scrollAnimation() {
               $(this).addClass('show');
           }
       });
+
+
+
   });
 }
 $(window).trigger('scroll');
 });
 
-//p-mainvisual__title アニメーション
-//付与したいクラスの配列
-var arr = ["upperRight", "lowerRight", "lowerLeft", "upperLeft"];
-var a = arr.length;
+//アニメーション(文字用)
+$(function () {
+  //aimation呼び出し
+  //p-mainvisual__title アニメーション
+  //付与したいクラスの配列
+  var arr = ["upperRight", "lowerRight", "lowerLeft", "upperLeft"];
+  var a = arr.length;
 
-//シャッフルアルゴリズム
-while (a) {
-  var j = Math.floor(Math.random() * a);
-  var t = arr[--a];
-  arr[a] = arr[j];
-  arr[j] = t;
+  //シャッフルアルゴリズム
+  while (a) {
+    var j = Math.floor(Math.random() * a);
+    var t = arr[--a];
+    arr[a] = arr[j];
+    arr[j] = t;
+  }
+
+  //シャッフルされた配列の要素を順番に表示する
+  arr.forEach(function (value, index) {
+    $(".p-mainvisual__title__box").eq(index).addClass(value);
+  });
+
+  if ($('.p-mainvisual__title__box').length) {
+      scrollAnimation();
+  }
+function scrollAnimation() {
+  $(window).scroll(function () {
+    $(".p-mainvisual__title__box").each(function () {
+      let position = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+    });
+
+      
+
+  });
 }
-
-//シャッフルされた配列の要素を順番に表示する
-arr.forEach(function (value, index) {
-  $(".p-mainvisual__title__box").eq(index).addClass(value);
+$(window).trigger('scroll');
 });
+
+
+const textAnimation = () => {
+  $(".p-mainvisual__title__box").each(function () {
+    let position = $(this).offset().top,
+        scroll = $(window).scrollTop(),
+        windowHeight = $(window).height();
+
+    if (scroll > position - windowHeight) {
+        $(this).addClass('show');
+    }
+});
+
+}
+//1,250ミリ秒後にcountUp関数を呼び出す処理を追加
+setTimeout(textAnimation, 1250);
+
+//countUpを適切な変数名に
+//js整える
+//画面検証

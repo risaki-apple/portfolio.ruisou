@@ -121,11 +121,17 @@
 }
 
 .trans.show {
-  -webkit-transform: translate(0, 0) !important;
-          transform: translate(0, 0) !important;
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+          transform: translate3d(0px, 0px, 0px) !important;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   opacity: 1;
+}
+
+.p-mainvisual__title__box.show {
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+          transform: translate3d(0px, 0px, 0px) !important;
+  opacity: 1 !important;
 }
 
 .to-up {
@@ -163,11 +169,9 @@
           transition-duration: 2000ms;
 }
 
-.skewX20 {
-  -webkit-transform: skewX(20deg);
-          transform: skewX(20deg);
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+.duration500 {
+  -webkit-transition-duration: 500ms !important;
+          transition-duration: 500ms !important;
 }
 
 .nami_lowerLeft {
@@ -179,89 +183,124 @@
           transition-timing-function: ease-out;
 }
 
-.p-mainvisual__title__box.trans.upperRight {
-  -webkit-transform: translate3d(20px, -20px, 0px);
-          transform: translate3d(20px, -20px, 0px);
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+.p-mainvisual__title__box.upperRight {
+  -webkit-transform: translate3d(10px, -20px, 0px) skew(-10deg, -10deg);
+          transform: translate3d(10px, -20px, 0px) skew(-10deg, -10deg);
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  opacity: 0;
 }
 
-.p-mainvisual__title__box.trans.lowerRight {
-  -webkit-transform: translate3d(20px, 20px, 0px);
-          transform: translate3d(20px, 20px, 0px);
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+.p-mainvisual__title__box.lowerRight {
+  -webkit-transform: translate3d(10px, 20px, 0px) skew(10deg, 10deg);
+          transform: translate3d(10px, 20px, 0px) skew(10deg, 10deg);
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  opacity: 0;
 }
 
-.p-mainvisual__title__box.trans.lowerLeft {
-  -webkit-transform: translate3d(-20px, 20px, 0px);
-          transform: translate3d(-20px, 20px, 0px);
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+.p-mainvisual__title__box.lowerLeft {
+  -webkit-transform: translate3d(-10px, 20px, 0px) skew(-10deg, -10deg);
+          transform: translate3d(-10px, 20px, 0px) skew(-10deg, -10deg);
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  opacity: 0;
 }
 
-.p-mainvisual__title__box.trans.upperLeft {
-  -webkit-transform: translate3d(-20px, -20px, 0px);
-          transform: translate3d(-20px, -20px, 0px);
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+.p-mainvisual__title__box.upperLeft {
+  -webkit-transform: translate3d(-10px, -20px, 0px) skew(10deg, 10deg);
+          transform: translate3d(-10px, -20px, 0px) skew(10deg, 10deg);
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  opacity: 0;
+}
+
+.transZ {
+  -webkit-transform: rotateY(20deg) !important;
+          transform: rotateY(20deg) !important;
 }
 
 .delay500 {
-  -webkit-transition-delay: 500ms;
-          transition-delay: 500ms;
+  -webkit-transition-delay: 500ms !important;
+          transition-delay: 500ms !important;
 }
 
 .delay750 {
-  -webkit-transition-delay: 750ms;
-          transition-delay: 750ms;
+  -webkit-transition-delay: 750ms !important;
+          transition-delay: 750ms !important;
 }
 
 .delay1000 {
-  -webkit-transition-delay: 1000ms;
-          transition-delay: 1000ms;
+  -webkit-transition-delay: 1000ms !important;
+          transition-delay: 1000ms !important;
 }
 
 .delay1250 {
-  -webkit-transition-delay: 1250ms;
-          transition-delay: 1250ms;
+  -webkit-transition-delay: 1250ms !important;
+          transition-delay: 1250ms !important;
+}
+
+.delay1350 {
+  -webkit-transition-delay: 1350ms !important;
+          transition-delay: 1350ms !important;
+}
+
+.delay1450 {
+  -webkit-transition-delay: 1450ms !important;
+          transition-delay: 1450ms !important;
 }
 
 .delay1500 {
-  -webkit-transition-delay: 1500ms;
-          transition-delay: 1500ms;
+  -webkit-transition-delay: 1500ms !important;
+          transition-delay: 1500ms !important;
+}
+
+.delay1550 {
+  -webkit-transition-delay: 1550ms !important;
+          transition-delay: 1550ms !important;
+}
+
+.delay1650 {
+  -webkit-transition-delay: 1650ms !important;
+          transition-delay: 1650ms !important;
 }
 
 .delay1750 {
-  -webkit-transition-delay: 1750ms;
-          transition-delay: 1750ms;
+  -webkit-transition-delay: 1750ms !important;
+          transition-delay: 1750ms !important;
+}
+
+.delay1750 {
+  -webkit-transition-delay: 1750ms !important;
+          transition-delay: 1750ms !important;
+}
+
+.delay1850 {
+  -webkit-transition-delay: 1850ms !important;
+          transition-delay: 1850ms !important;
+}
+
+.delay1950 {
+  -webkit-transition-delay: 1950ms !important;
+          transition-delay: 1950ms !important;
 }
 
 .delay2000 {
-  -webkit-transition-delay: 2000ms;
-          transition-delay: 2000ms;
+  -webkit-transition-delay: 2000ms !important;
+          transition-delay: 2000ms !important;
+}
+
+.delay2050 {
+  -webkit-transition-delay: 2050ms !important;
+          transition-delay: 2050ms !important;
+}
+
+.delay2500 {
+  -webkit-transition-delay: 2500ms !important;
+          transition-delay: 2500ms !important;
 }
 
 /*** アニメーションの定義 ***/
-@-webkit-keyframes textWave {
-  0% {
-    right: 0;
-  }
-  100% {
-    -webkit-transform: skewX(20deg);
-            transform: skewX(20deg);
-  }
-}
-@keyframes textWave {
-  0% {
-    right: 0;
-  }
-  100% {
-    -webkit-transform: skewX(20deg);
-            transform: skewX(20deg);
-  }
-}
-
 @-webkit-keyframes imgScale {
   0% {
     -webkit-transform: scale(1.05);
@@ -274,7 +313,6 @@
     opacity: 1;
   }
 }
-
 @keyframes imgScale {
   0% {
     -webkit-transform: scale(1.05);
@@ -637,6 +675,7 @@ html {
 
 .l-main .p-mainvisual__inner .p-mainvisual__nami {
   position: absolute;
+  overflow: hidden;
   font-size: 0;
   z-index: 20;
 }
