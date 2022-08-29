@@ -73,6 +73,10 @@
   font-size: auto;
 }
 
+.c-viewMore a:hover {
+  color: gray;
+}
+
 .c-viewMore a::before {
   content: "";
   display: block;
@@ -1171,6 +1175,10 @@ html {
   font-size: 0.875rem;
   line-height: 2.285714286;
   letter-spacing: 0.05em;
+}
+
+.l-main .p-howTo__inner ul li p br {
+  display: none;
 }
 
 .l-main .p-howTo__inner ul li .p-howTo__img {
