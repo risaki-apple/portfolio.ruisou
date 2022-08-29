@@ -34,9 +34,6 @@ function scrollAnimation() {
               $(this).addClass('show');
           }
       });
-
-
-
   });
 }
 $(window).trigger('scroll');
@@ -63,40 +60,27 @@ $(function () {
     $(".p-mainvisual__title__box").eq(index).addClass(value);
   });
 
-  if ($('.p-mainvisual__title__box').length) {
-      scrollAnimation();
-  }
-function scrollAnimation() {
-  $(window).scroll(function () {
-    $(".p-mainvisual__title__box").each(function () {
-      let position = $(this).offset().top,
-          scroll = $(window).scrollTop(),
-          windowHeight = $(window).height();
-    });
-
-      
-
-  });
-}
-$(window).trigger('scroll');
-});
-
-
-const textAnimation = () => {
-  $(".p-mainvisual__title__box").each(function () {
-    let position = $(this).offset().top,
-        scroll = $(window).scrollTop(),
-        windowHeight = $(window).height();
-
-    if (scroll > position - windowHeight) {
-        $(this).addClass('show');
+  const textAnimation = () => {
+    
+    if ($('.p-mainvisual__title__box').length) {
+        scrollAnimation();
     }
-});
-
-}
-//1,250ミリ秒後にcountUp関数を呼び出す処理を追加
-setTimeout(textAnimation, 1250);
-
-//countUpを適切な変数名に
-//js整える
-//画面検証
+    function scrollAnimation() {
+      $(window).scroll(function () {
+          $(".p-mainvisual__title__box").each(function () {
+              let position = $(this).offset().top,
+                  scroll = $(window).scrollTop(),
+                  windowHeight = $(window).height();
+    
+              if (scroll > position - windowHeight + 300) {
+                  $(this).addClass('show');
+              }
+          });
+      });
+    }
+    $(window).trigger('scroll');
+    
+  }
+  //1,250ミリ秒後にcountUp関数を呼び出す処理を追加
+  setTimeout(textAnimation, 1250);
+  });
