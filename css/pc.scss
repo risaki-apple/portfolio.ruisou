@@ -119,9 +119,13 @@
   transition-timing-function: ease;
 }
 .trans.show {
-  transform: translate(0, 0) !important;
+  transform: translate3d(0px, 0px, 0px) !important;
   transform: rotate(0deg);
   opacity: 1;
+}
+.p-mainvisual__title__box.show {
+  transform: translate3d(0px, 0px, 0px) !important;
+  opacity: 1 !important;
 }
 .to-up {
   transform: translate3d(0px, 15px, 0px);
@@ -143,64 +147,87 @@
   transform: skewX(5deg);
   transition-duration: 2000ms;
 }
-.skewX20 {
-  transform: skewX(20deg);
-  transition-duration: 2000ms;
+.duration500 {
+  transition-duration: 500ms !important;
 }
 .nami_lowerLeft {
   transform: translate3d(-50px, 20px, 0px);
   transition-duration: 1000ms;
   transition-timing-function: ease-out;
 }
-.p-mainvisual__title__box.trans.upperRight {
-  transform: translate3d(20px, -20px, 0px);
-  transition-duration: 2000ms;
+.p-mainvisual__title__box.upperRight {
+  transform: translate3d(10px, -20px, 0px) skew(-10deg, -10deg);
+  transition-duration: 1500ms;
+  opacity: 0;
 }
-.p-mainvisual__title__box.trans.lowerRight {
-  transform: translate3d(20px, 20px, 0px);
-  transition-duration: 2000ms;
+.p-mainvisual__title__box.lowerRight {
+  transform: translate3d(10px, 20px, 0px) skew(10deg, 10deg);
+  transition-duration: 1500ms;
+  opacity: 0;
 }
-.p-mainvisual__title__box.trans.lowerLeft {
-  transform: translate3d(-20px, 20px, 0px);
-  transition-duration: 2000ms;
+.p-mainvisual__title__box.lowerLeft {
+  transform: translate3d(-10px, 20px, 0px) skew(-10deg, -10deg);
+  transition-duration: 1500ms;
+  opacity: 0;
 }
-.p-mainvisual__title__box.trans.upperLeft {
-  transform: translate3d(-20px, -20px, 0px);
-  transition-duration: 2000ms;
+.p-mainvisual__title__box.upperLeft {
+  transform: translate3d(-10px, -20px, 0px) skew(10deg, 10deg);
+  transition-duration: 1500ms;
+  opacity: 0;
+}
+.transZ {
+  transform: rotateY(20deg) !important;
 }
 .delay500 {
-  transition-delay: 500ms;
+  transition-delay: 500ms !important;
 }
 .delay750 {
-  transition-delay: 750ms;
+  transition-delay: 750ms !important;
 }
 .delay1000 {
-  transition-delay: 1000ms;
+  transition-delay: 1000ms !important;
 }
 .delay1250 {
-  transition-delay: 1250ms;
+  transition-delay: 1250ms !important;
+}
+.delay1350 {
+  transition-delay: 1350ms !important;
+}
+.delay1450 {
+  transition-delay: 1450ms !important;
 }
 .delay1500 {
-  transition-delay: 1500ms;
+  transition-delay: 1500ms !important;
+}
+.delay1550 {
+  transition-delay: 1550ms !important;
+}
+.delay1650 {
+  transition-delay: 1650ms !important;
 }
 .delay1750 {
-  transition-delay: 1750ms;
+  transition-delay: 1750ms !important;
+}
+.delay1750 {
+  transition-delay: 1750ms !important;
+}
+.delay1850 {
+  transition-delay: 1850ms !important;
+}
+.delay1950 {
+  transition-delay: 1950ms !important;
 }
 .delay2000 {
-  transition-delay: 2000ms;
+  transition-delay: 2000ms !important;
+}
+.delay2050 {
+  transition-delay: 2050ms !important;
+}
+.delay2500 {
+  transition-delay: 2500ms !important;
 }
 
 /*** アニメーションの定義 ***/
-@keyframes textWave {
-  0% {
-    right: 0;
-  }
-  100% {
-    //right: -0.5em; /* right位置を4分の1ずらす */
-    transform: skewX(20deg);
-  }
-}
-
 @keyframes imgScale {
   0% {
     transform: scale(1.05);
@@ -479,12 +506,6 @@ html {
           }
 
           span {
-            // display: inline-block; /* インラインブロック要素とする（アニメーションのため） */
-            // position: relative; /* 相対位置とする（アニメーションのため） */
-
-            // animation-name: textWave;
-            // animation-duration: 1s;
-            // animation-timing-function: ease-out; // 変化のスピード感 ( linear : 開始から終了まで一定)
             &:nth-child(2) {
               transition-delay: 0.2s;
             }
@@ -526,6 +547,7 @@ html {
 
       .p-mainvisual__nami {
         position: absolute;
+        overflow: hidden;
         font-size: 0;
         z-index: 20;
         img {

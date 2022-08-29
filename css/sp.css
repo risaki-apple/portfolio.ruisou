@@ -269,6 +269,12 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .l-main .p-howTo__inner h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
   .l-main .p-howTo__inner ul {
     gap: 8vw 10%;
     margin-top: 24vw;

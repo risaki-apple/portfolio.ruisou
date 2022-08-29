@@ -298,9 +298,14 @@
 
     .p-howTo {
       padding: 24.5333333333vw 0 39.4666666667vw;
+
       &__inner {
         padding-left: 0;
         padding-right: 0;
+        h1 {
+          width: fit-content;
+          margin: auto;
+        }
         ul {
           gap: 8vw 10%;
           margin-top: 24vw;
