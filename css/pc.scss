@@ -1,6 +1,5 @@
 .c_list_date {
   letter-spacing: 0.1em;
-  font-family: "Hina Mincho", serif;
 }
 
 .c_list_title {
@@ -20,7 +19,6 @@
   font-size: 0.5625rem;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  font-family: "Hina Mincho", serif;
   margin-top: 2rem;
   margin-left: 0.5rem;
 }
@@ -35,14 +33,12 @@
       padding-left: 0.625rem;
       font-size: 0.875rem;
       letter-spacing: 0.12em;
-      font-family: "Hina Mincho", serif;
     }
   }
 }
 
 .c-sec__title {
   position: relative;
-  font-family: "Hina Mincho", serif;
   padding-left: 3rem;
   font-size: 1.25rem;
   letter-spacing: 0.12em;
@@ -72,7 +68,6 @@
     font-size: 13px;
     height: 100%;
     letter-spacing: 0.1em;
-    font-family: "Hina Mincho", serif;
     white-space: nowrap;
     color: inherit;
     text-decoration: none;
@@ -107,7 +102,6 @@
 
 .c-list__date {
   letter-spacing: 0.1em;
-  font-family: "Hina Mincho", serif;
 }
 
 //アニメーション
@@ -411,7 +405,6 @@ html {
       height: 100%;
       background-color: #fff;
       cursor: pointer;
-      font-family: "Hina Mincho", serif;
       transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
       &:hover {
         background-color: #c5cbd1;
@@ -542,7 +535,6 @@ html {
         letter-spacing: 0.04em;
         line-height: 2;
         z-index: 21;
-        font-family: "Hina Mincho", serif;
       }
 
       .p-mainvisual__nami {
@@ -765,7 +757,6 @@ html {
         h1 {
           writing-mode: vertical-rl;
           letter-spacing: 0.2em;
-          font-family: "Shippori Mincho", serif;
           font-size: 1.25rem;
           line-height: 1.2;
         }
@@ -853,7 +844,6 @@ html {
               h3 {
                 writing-mode: vertical-rl;
                 letter-spacing: 0.2em;
-                font-family: "Shippori Mincho", serif;
                 position: absolute;
                 left: 1.5em;
                 top: -2em;
@@ -942,7 +932,6 @@ html {
               display: block;
               position: absolute;
               font-size: 2rem;
-              font-family: "Hina Mincho", serif;
               left: -0.3em;
               top: -1em;
               letter-spacing: 0.1em;
@@ -1044,7 +1033,6 @@ html {
           width: 100%;
           height: 100%;
           font-size: 0.8rem;
-          font-family: "Hina Mincho", serif;
           letter-spacing: 0.12em;
           padding-right: 1.5625vw;
           cursor: pointer;
