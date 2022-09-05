@@ -16,6 +16,9 @@ $(function () {
         $('.l-nav').toggleClass('open');
         $('body').toggleClass('noscroll'); // 追記
     });
+    $('.l-nav__list__main>li>a, .l-nav__list__sub>li>a, .l-nav__list__sns>li>a, .l-nav__logo>.c-logo__title>a').on('click', function(event) {
+      $('.l-header__btn').trigger('click');
+    });
 });
 
 //アニメーション(全体)
